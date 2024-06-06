@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'cd /var/lib/jenkins/'
                 sh 'script.sh'
             }
         }
