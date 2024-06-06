@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'sudo -s'
                 sh 'chmod -R 777 /home/ubuntu/workDir/cicd-pipeline-train-schedule-autodeploy'
                 sh 'cd /home/ubuntu/workDir/cicd-pipeline-train-schedule-autodeploy'
                 sh 'script.sh'
