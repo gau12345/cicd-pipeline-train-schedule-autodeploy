@@ -1,4 +1,8 @@
-sudo -s
-sudo cd /home/ubuntu/workDir/cicd-pipeline-train-schedule-autodeploy
-sudo docker build -t cicd-pipeline-train-schedule-autodeploy:latest .
-sudo docker push cicd-pipeline-train-schedule-autodeploy:latest
+#!/bin/bash
+
+# Define image name and tag (replace with your values)
+IMAGE_NAME="cicd-pipeline-train-schedule-autodeploy"
+IMAGE_TAG="latest"
+
+# Build the Docker image
+docker build -t $IMAGE_NAME:$IMAGE_TAG .
